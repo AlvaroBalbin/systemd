@@ -17,7 +17,7 @@ If you see some messages like these:
 * \[ OK \] Started _name_.
 
 then systemd is running.
-(See an actual [screenshot](../assets/f17boot.png).)
+(See an actual [screenshot](./assets/f17boot.png).)
 
 Debugging always gets easier if you can get a shell.
 If you do not get a login prompt, try switching to a different virtual terminal using CTRL+ALT+F\_\_.

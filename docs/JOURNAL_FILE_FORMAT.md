@@ -8,9 +8,9 @@ SPDX-License-Identifier: LGPL-2.1-or-later
 # Journal File Format
 
 _Note that this document describes the binary on-disk format of journals only.
-For interfacing with web technologies there's the [Journal JSON Format](JOURNAL_EXPORT_FORMATS#journal-json-format).
+For interfacing with web technologies there's the [Journal JSON Format](JOURNAL_EXPORT_FORMATS.md#journal-json-format).
 For transfer of journal data across the network there's the
-[Journal Export Format](JOURNAL_EXPORT_FORMATS#journal-export-format)._
+[Journal Export Format](JOURNAL_EXPORT_FORMATS.md#journal-export-format)._
 
 The systemd journal stores log data in a binary format with several features:
 
@@ -36,7 +36,7 @@ It provides you with full access to the files, and will not withhold any data.
 If you find a limitation, please ping us and we might add some additional interfaces for you.
 
 If you need access to the raw journal data in serialized stream form without C API our recommendation is to make use of the
-[Journal Export Format](JOURNAL_EXPORT_FORMATS#journal-export-format),
+[Journal Export Format](JOURNAL_EXPORT_FORMATS.md#journal-export-format),
 which you can get via `journalctl -o export` or via `systemd-journal-gatewayd`.
 The export format is much simpler to parse, but complete and accurate.
 Due to its stream-based nature it is not indexed.
